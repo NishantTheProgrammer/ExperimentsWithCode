@@ -1,0 +1,317 @@
+*
+{
+    font-family: "Comic Sans MS";
+    color: white;
+
+}
+
+
+::-webkit-scrollbar
+{
+    display: none;
+}
+body
+{
+    background-image: url("background.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.container
+{
+    height: 500px;   
+    width: 768px;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 0px 30px 5px black;
+    /* animation-name: Nishant;
+    animation-duration: 2s; */
+
+}
+/* @keyframes Nishant
+{
+    0%{
+        left: -786px;
+        opacity: 0px;
+    }
+    100%{
+
+    }
+} */
+
+
+
+
+.intro
+{
+    background-color: rgba(128, 123, 141, 0.90);    
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: justify;
+    font-size:14px;
+    width: 36%;
+    height: 94%;
+    float: left;
+    padding: 2%;
+    position: relative;
+    animation-name: Nishant;
+    animation-duration: 3s;
+}
+@keyframes Nishant
+{
+    0%{
+        top: -94%;
+    }
+    50%
+    {
+        top:100px;
+    }
+    100%
+    {
+        top: 0px;
+    }
+}
+
+
+
+
+.login, .signup
+{
+    display: block;
+    float: right;
+    width: 60%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(165, 42, 42, 0.90);
+
+
+    height: 100%;
+    text-align: center;
+    position: relative;
+    animation-name: login;
+    animation-duration: 3s;
+}
+@keyframes login
+{
+    0%{
+        top: 200%;
+    }
+    50%
+    {
+        top:-100px;
+    }
+    100%
+    {
+        top: 0px;
+    }
+}
+
+
+
+
+
+#logo
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    opacity: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: rgba(165, 42, 42, 0.8);
+    position: relative;
+
+    animation-name: logo;
+    animation-delay: 4s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes logo
+{
+    0%
+    {
+        left:-50px;
+        top: 40%;
+        opacity: 0;
+    }
+    1%{
+        opacity: 0;
+        
+        left: -50px;
+        
+        transform: rotate(-180deg);
+    }
+    75%{
+        left: -50px;
+        top: 40%;
+        opacity: 1;
+        transform: rotate(360deg);
+    } 
+    100%
+    {
+        left: -50px;
+        top: 40%;
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+}
+
+
+
+#logo:hover
+{
+    box-shadow: 0px 0px 10px 0px black;
+    transform: rotate(180deg);
+}
+
+
+
+img
+{
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: white;
+    border-radius: 50%;
+}
+h1
+{
+    text-align: center;
+    font-size:30px;
+    margin-top: 100px;
+}
+input{
+    margin-top: 25px; 
+    cursor: pointer;  
+    border-radius: 50px;
+    border-width: 0px;
+    outline: none;
+}
+.username, .password, #email, #cpassword
+{
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: black;
+    
+}
+.username:hover, .password:hover, #email:hover, #cpassword:hover
+{
+    box-shadow: 0px 0px 8px 1px black;
+    opacity: .9;
+}
+.username:hover, .password:hover, #email:hover, #cpassword:hover
+{
+    opacity: 9;
+}
+.username:focus, .password:focus, #email:focus, #cpassword:focus
+{
+    box-shadow: 0px 0px 8px 1px black;
+}
+
+
+
+.rememberMe
+{
+    height: 15px;
+    width: 15px;
+    font-size: 15px;
+    
+}
+
+
+
+
+
+.loginbtn, .signupbtn
+{
+    right:-750px;
+    height: 30px;
+    margin-left:9%;
+    width: 40%;
+    position: relative;
+    animation-name: btn;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn
+{
+    0%{
+        right: -750px;
+    }
+
+    100%
+    {
+        right: 0px;
+    }
+}
+
+.loginbtn
+{
+    background-color: rgba(59, 177, 138, 0.90);
+}
+.signupbtn
+{
+    background-color: rgba(222, 184, 135, 0.90);
+}
+.loginbtn:hover, .signupbtn:hover
+{
+    box-shadow: 0px 0px 8px 1px black;
+    opacity: .9;
+    
+}
+
+
+h1, h2
+{
+    text-shadow: 0px 0px 10px black;
+}
+
+#about, h1
+{
+    width: 80%;
+}
+
+#about
+{
+    margin-bottom: 130px;
+}
+
+
+
+
+form
+{
+    margin: 0 auto;
+    width: 250px;
+    text-align: left;
+}
+
+
+.icon
+{
+    cursor: pointer;
+    filter: grayscale(1);
+    border-radius: 50%;
+    border:solid;
+    border-width: 1px;
+    height: 25px;
+    widows: 25px;
+    bottom: -15px;
+    margin-right: 4px;
+}
+.icon:hover
+{
+    box-shadow: 0px 0px 8px 1px black;
+    border-color: black;
+    filter: grayscale(0);
+}

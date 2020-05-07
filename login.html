@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css"/>
+    
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>About Us</h1>
+            <p id="about">We made this YouTube channel for doing some deep study of code, it may be interesting or maybe boring too.</br>
+                    This channel is going to be on Machine Learning but for now, I don't even know the basics of Machine learning &#128514;
+
+            </p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100006100632588"><img class="icon" src="fb.png"/></a>
+                <a href="https://twitter.com/nishant29769070"><img class="icon" src="tweeter.png"/></a>
+                <a href="https://www.instagram.com/knishant113"><img class="icon" src="insta.png"/></a>
+                <a href="mailto:knishant113@gmail.com"><img class="icon" src="gmail.png"/></a>
+            </div>
+
+        </div>
+        <div class="login">
+            <div id="logo">
+                <a href="https://www.youtube.com/channel/UCjmuqTknm5mI51zDN116bfA" style="height: 100%; width: 100%;">
+                <img width="80" height="80" src="logo.png">
+                <a/>
+            </div>
+            <h2>Welcome To ExperimentsWith{Code}</h2>
+            <form action="home.html">
+                <input type="text" class="username" placeholder="Username"/><br/>
+                <input type="password" class="password" placeholder="Password"><br/>
+                <input type="checkbox" class="rememberMe"/><label class="rememberMe">Remember me</label><br>
+                <input type="submit" class="loginbtn" value="Log In"/>
+                <input  type="button" class="signupbtn" onclick="signUp()" value="Sign Up"/>
+            </form>
+        </div>
+        
+
+
+
+        <div class="signup" style="display: none;
+                                background-color:rgba(113, 60, 182, 0.9)">
+            <div id="logo" style="background-color:rgba(113, 60, 182, 0.8)">
+                <a href="https://www.youtube.com/channel/UCjmuqTknm5mI51zDN116bfA" style="height: 100%; width: 100%;">
+                <img width="80" height="80" src="logo.png">
+                <a/>
+            </div>
+            <h2>Welcome To ExperimentsWith{Code}</h2>
+            <form>
+                <input type="text" class="username" placeholder="Username"/><br/>
+                <input type="text" id="email" placeholder="Email"/><br/>
+                <input type="password" class="password" placeholder="Password"><br/>
+                <input type="password" class="password" placeholder="Conform Password"><br/>
+                <input type="submit" class="loginbtn" value="Sign Up"/>
+                <input  type="button" class="signupbtn" onclick="logIn()"value="Log In"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
